@@ -1,7 +1,6 @@
-import { SignIn } from './pages/SignIn';
-import { SignUp } from './pages/SignUp';
+import { Router } from './router';
 import './styles/global.css';
 
 export const App = () => {
-  return <SignUp />;
+  return <Router />;
 };

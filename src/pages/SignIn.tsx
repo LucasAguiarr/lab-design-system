@@ -1,4 +1,5 @@
 import { Envelope, Lock } from 'phosphor-react';
+import { Link } from 'react-router-dom';
 import {
   Button,
   Checkbox,
@@ -10,7 +11,7 @@ import {
 
 export function SignIn() {
   return (
-    <div className="flex flex-col w-screen h-screen bg-zinc-900 items-center justify-center text-zinc-100">
+    <div className="flex flex-col w-screen h-screen bg-zinc-900 items-center justify-center text-zinc-100 accent">
       <header className="flex flex-col items-center">
         <Logo />
 
@@ -79,7 +80,7 @@ export function SignIn() {
           className="text-zinc-400 underline hover:text-zinc-200"
           asChild
         >
-          <a href="">Não possui conta? Crie uma agora</a>
+          <Link to="/signup">Não possui conta? Crie uma agora</Link>
         </Text>
       </footer>
     </div>
