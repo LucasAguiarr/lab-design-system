@@ -72,7 +72,7 @@ export function SignIn() {
           className="text-zinc-400 underline hover:text-zinc-200"
           asChild
         >
-          <a href="">Não tem uma conta?</a>
+          <a href="">Esquece sua senha?</a>
         </Text>
 
         <Text
