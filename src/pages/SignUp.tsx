@@ -1,4 +1,5 @@
-import { Envelope, Lock, User } from 'phosphor-react';
+import { CaretLeft, Envelope, Lock, User } from 'phosphor-react';
+import { Link } from 'react-router-dom';
 import {
   Button,
   Checkbox,
@@ -10,7 +11,7 @@ import {
 
 export function SignUp() {
   return (
-    <div className="flex flex-col w-screen h-screen bg-zinc-900 items-center justify-center text-zinc-100">
+    <div className="flex flex-col max-w-sm m-auto h-screen bg-zinc-900 items-center justify-center text-zinc-100">
       <header className="flex flex-col items-center">
         <Logo />
 
@@ -22,7 +23,14 @@ export function SignUp() {
         </Text>
       </header>
 
-      <form className="flex flex-col items-stretch gap-4 w-full max-w-sm mt-10">
+      <div className="flex items-center justify-start w-full gap-2 mt-8 text-zinc-400">
+        <CaretLeft size="24" weight="bold" />
+        <Text asChild size="lg" className="text-zinc-400">
+          <Link to="/">Voltar</Link>
+        </Text>
+      </div>
+
+      <form className="flex flex-col items-stretch gap-4 w-full mt-8">
         <label htmlFor="name" className="flex flex-col gap-3">
           <Text className="font-semibold">Seu nome</Text>
 

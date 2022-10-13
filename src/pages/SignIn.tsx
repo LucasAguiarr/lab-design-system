@@ -11,7 +11,7 @@ import {
 
 export function SignIn() {
   return (
-    <div className="flex flex-col w-screen h-screen bg-zinc-900 items-center justify-center text-zinc-100 accent">
+    <div className="flex flex-col max-w-sm m-auto h-screen bg-zinc-900 items-center justify-center text-zinc-100 accent">
       <header className="flex flex-col items-center">
         <Logo />
 
@@ -23,7 +23,7 @@ export function SignIn() {
         </Text>
       </header>
 
-      <form className="flex flex-col items-stretch gap-4 w-full max-w-sm mt-10">
+      <form className="flex flex-col items-stretch gap-4 w-full mt-10">
         <label htmlFor="email" className="flex flex-col gap-3">
           <Text className="font-semibold">Endereço de e-mail</Text>
 
